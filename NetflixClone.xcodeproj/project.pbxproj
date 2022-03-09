@@ -18,6 +18,9 @@
 		C85A937E27D0D71900B23829 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85A937D27D0D71900B23829 /* Movie.swift */; };
 		C85A938027D0EBFE00B23829 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85A937F27D0EBFE00B23829 /* CollectionTableViewCell.swift */; };
 		C85A938427D0F8FE00B23829 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85A938327D0F8FE00B23829 /* TableHeaderView.swift */; };
+		C86E966F27D7350F000AFECC /* APIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E966E27D7350F000AFECC /* APIResponseModel.swift */; };
+		C86E967127D8C492000AFECC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E967027D8C492000AFECC /* Extensions.swift */; };
+		C8EB5B7427D6018200357B7F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EB5B7327D6018200357B7F /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		C85A937D27D0D71900B23829 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		C85A937F27D0EBFE00B23829 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		C85A938327D0F8FE00B23829 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
+		C86E966E27D7350F000AFECC /* APIResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseModel.swift; sourceTree = "<group>"; };
+		C86E967027D8C492000AFECC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C8EB5B7327D6018200357B7F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +75,14 @@
 				C85A936227D0D15100B23829 /* AppDelegate.swift */,
 				C85A936427D0D15100B23829 /* SceneDelegate.swift */,
 				C85A936627D0D15100B23829 /* MainTabBarViewController.swift */,
+				C8EB5B7527D6018900357B7F /* Managers */,
 				C85A938127D0F2EE00B23829 /* Views */,
 				C85A938227D0F2F800B23829 /* Models */,
 				C85A937C27D0D44600B23829 /* Controllers */,
 				C85A936B27D0D15100B23829 /* Assets.xcassets */,
 				C85A936D27D0D15100B23829 /* LaunchScreen.storyboard */,
 				C85A937027D0D15100B23829 /* Info.plist */,
+				C86E967027D8C492000AFECC /* Extensions.swift */,
 			);
 			path = NetflixClone;
 			sourceTree = "<group>";
@@ -102,8 +110,17 @@
 			isa = PBXGroup;
 			children = (
 				C85A937D27D0D71900B23829 /* Movie.swift */,
+				C86E966E27D7350F000AFECC /* APIResponseModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C8EB5B7527D6018900357B7F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C8EB5B7327D6018200357B7F /* APIManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,10 +195,13 @@
 			files = (
 				C85A938427D0F8FE00B23829 /* TableHeaderView.swift in Sources */,
 				C85A937E27D0D71900B23829 /* Movie.swift in Sources */,
+				C8EB5B7427D6018200357B7F /* APIManager.swift in Sources */,
 				C85A937927D0D3E000B23829 /* SearchViewController.swift in Sources */,
 				C85A936727D0D15100B23829 /* MainTabBarViewController.swift in Sources */,
 				C85A937B27D0D3F100B23829 /* DownloadsViewController.swift in Sources */,
 				C85A937727D0D3C300B23829 /* RecommendationsViewController.swift in Sources */,
+				C86E967127D8C492000AFECC /* Extensions.swift in Sources */,
+				C86E966F27D7350F000AFECC /* APIResponseModel.swift in Sources */,
 				C85A936327D0D15100B23829 /* AppDelegate.swift in Sources */,
 				C85A936527D0D15100B23829 /* SceneDelegate.swift in Sources */,
 				C85A938027D0EBFE00B23829 /* CollectionTableViewCell.swift in Sources */,

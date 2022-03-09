@@ -34,6 +34,15 @@ class RecommendationsViewController: UITableViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         setupTableView()
+        
+        APIManager.shared.requestData(ofType: .trending) { results in
+            switch results {
+            case .success(let movies):
+                print(movies)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
     func setupTableView() {

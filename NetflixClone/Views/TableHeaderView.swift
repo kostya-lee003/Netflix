@@ -8,6 +8,8 @@
 import UIKit
 
 class TableHeaderView: UIView {
+    private var image: UIImage?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -15,5 +17,9 @@ class TableHeaderView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError()
+    }
+    
+    func updateBackgroundImage(with image: UIImage?) {
+        self.image = image
     }
 }
