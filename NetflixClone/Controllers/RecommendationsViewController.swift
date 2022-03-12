@@ -35,10 +35,13 @@ class RecommendationsViewController: UITableViewController {
         view.backgroundColor = .systemBackground
         setupTableView()
         
-        APIManager.shared.requestData(ofType: .trending) { results in
+        APIManager.shared.requestData(ofType: .headerMovie) { results in
             switch results {
             case .success(let movies):
                 print(movies)
+//                movies.results.forEach {
+//                    print($0.original_title)
+//                }
             case .failure(let error):
                 print(error)
             }

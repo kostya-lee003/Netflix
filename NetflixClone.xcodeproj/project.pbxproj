@@ -20,6 +20,7 @@
 		C85A938427D0F8FE00B23829 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85A938327D0F8FE00B23829 /* TableHeaderView.swift */; };
 		C86E966F27D7350F000AFECC /* APIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E966E27D7350F000AFECC /* APIResponseModel.swift */; };
 		C86E967127D8C492000AFECC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E967027D8C492000AFECC /* Extensions.swift */; };
+		C8B6812027DCC1BC00BD7D3E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6811F27DCC1BC00BD7D3E /* Constants.swift */; };
 		C8EB5B7427D6018200357B7F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EB5B7327D6018200357B7F /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		C85A938327D0F8FE00B23829 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
 		C86E966E27D7350F000AFECC /* APIResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseModel.swift; sourceTree = "<group>"; };
 		C86E967027D8C492000AFECC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C8B6811F27DCC1BC00BD7D3E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C8EB5B7327D6018200357B7F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C83CE86627DBA45B0090BD81 /* APIResponse */ = {
+			isa = PBXGroup;
+			children = (
+				C86E966E27D7350F000AFECC /* APIResponseModel.swift */,
+			);
+			path = APIResponse;
+			sourceTree = "<group>";
+		};
 		C85A935627D0D15100B23829 = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				C85A937D27D0D71900B23829 /* Movie.swift */,
-				C86E966E27D7350F000AFECC /* APIResponseModel.swift */,
+				C83CE86627DBA45B0090BD81 /* APIResponse */,
+				C8B6811F27DCC1BC00BD7D3E /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,6 +211,7 @@
 				C85A936727D0D15100B23829 /* MainTabBarViewController.swift in Sources */,
 				C85A937B27D0D3F100B23829 /* DownloadsViewController.swift in Sources */,
 				C85A937727D0D3C300B23829 /* RecommendationsViewController.swift in Sources */,
+				C8B6812027DCC1BC00BD7D3E /* Constants.swift in Sources */,
 				C86E967127D8C492000AFECC /* Extensions.swift in Sources */,
 				C86E966F27D7350F000AFECC /* APIResponseModel.swift in Sources */,
 				C85A936327D0D15100B23829 /* AppDelegate.swift in Sources */,

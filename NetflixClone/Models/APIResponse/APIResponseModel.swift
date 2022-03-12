@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct APIResponse: Codable {
+struct MovieAPI: Codable {
     let homepage: String?
     let id: Int?
     let original_title: String?
@@ -29,3 +29,11 @@ struct APIResponse: Codable {
  "vote_average" = "7.5";
  "vote_count" = 19083;
  */
+
+// The json response of upcoming, trending category
+struct CategoryAPI: Codable {
+    var page: Int?
+    var results: [MovieAPI]
+    var total_results: Int?
+    var total_pages: Int?
+}
