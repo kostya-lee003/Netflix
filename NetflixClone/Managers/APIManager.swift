@@ -25,6 +25,23 @@ enum Category {
 
 class APIManager {
     static let shared = APIManager()
+    
+    func requestNewHeader(completion: @escaping (Result<MovieAPI, Error>) -> Void)
+    {
+        let task = URLSession.shared.dataTask(with: URL.headerMovie) { data, response, error in
+            guard let data = data, error == nil else {
+                return
+            }
+            // And then update header image inside completion
+            do {
+                let results = try JSONDecoder().decode(MovieAPI.self, from: data)
+                completion(.success(results))
+            } catch {
+                completion(.failure(error))
+            }
+        }
+    }
+    
     func requestData(ofType category: Category,
                      completion: @escaping (Result<CategoryAPI, Error>) -> Void) {
 
@@ -51,6 +68,7 @@ class APIManager {
             
             do {
                 let results = try JSONDecoder().decode(CategoryAPI.self, from: data)
+                
 //                let results = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
                 
                 completion(.success(results))

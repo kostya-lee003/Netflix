@@ -77,4 +77,10 @@ extension RecommendationsViewController {
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         40
     }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = .systemBackground
+        return view
+    }
 }
