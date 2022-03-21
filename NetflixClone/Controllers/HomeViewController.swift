@@ -22,7 +22,7 @@ struct Section {
     }
 }
 
-class RecommendationsViewController: UITableViewController {
+class HomeViewController: UITableViewController {
     
     let sections: [Section] = [
         Section(title: "Top rated"),
@@ -55,7 +55,7 @@ class RecommendationsViewController: UITableViewController {
     }
 }
 
-extension RecommendationsViewController {
+extension HomeViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
